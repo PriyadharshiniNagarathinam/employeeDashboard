@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import Search from "./components/Search";
 import Dashboard from "./components/Dashboard";
 import EmployeeDetail from "./components/EmployeeDetail";
 import './App.css'
@@ -48,15 +47,12 @@ const App = () => {
           path="/"
           element={
             <>
-              <h1>Employee Dashboard</h1>
-              <Search
-                searchName={searchId}
-                setSearchName={setSearchId}
-                handleSearch={handleSearch}
-              />
               <Dashboard
                 employees={filteredEmployees}
                 handleDelete={handleDelete}
+                searchId={searchId}
+                setSearchId={setSearchId}
+                handleSearch={handleSearch}
               />
             </>
           }

@@ -10,7 +10,7 @@ const Search = ({ searchId, setSearchId, handleSearch }) => {
         className="search-input"
         placeholder="Search by ID"
       />
-      <button onClick={handleSearch} className="button">
+      <button onClick={handleSearch} className="search-button">
         Search
       </button>
     </div>
