@@ -18,14 +18,7 @@ const Dashboard = ({
         handleSearch={handleSearch}
       />
       <div className="employee-cards-container">
-        {/* {employees.map((employee) => (
-          <EmployeeCard
-            key={employee.id}
-            employee={employee}
-            handleDelete={handleDelete}
-          />
-        ))} */}
-        {employees.size > 0 ? (
+        {employees.length > 0 ? (
           employees.map((employee) => (
             <EmployeeCard
               key={employee.id}
